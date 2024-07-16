@@ -1,0 +1,368 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 0 40px;
+    /* background-color: green; */
+   
+}
+header .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hamburger {
+    display: none;
+}
+.header .logo {
+    width: 170px;
+    height: 100px;
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.menu-links {
+    display: flex;
+    align-items: center;
+}
+.menu-links ul{
+    display: flex;
+    gap: 20px;
+}
+.menu-links ul li {
+    list-style-type: none;
+}
+.menu-links ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+.menu-links ul li a:hover {
+    color: green;
+}
+
+.contact-link {
+    text-decoration: none;
+    background: yellow;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+    /* animation: colorchange 1s ease-in 2; */
+}
+
+.contact-link:hover {
+    background-color: aliceblue;
+    transition: background-color 0.5s;
+}
+
+.contact-link a {
+    text-decoration: none;
+    display: flex;
+    /* text-align: center; */
+    gap: 10px;
+    color: black;
+    align-items: center;
+}
+
+.hero {
+    background-repeat: no-repeat;
+    animation: animate 10s ease-in-out infinite;
+    height: 150vh;
+    width: 100vw;
+    background-attachment: fixed;
+    position: relative;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+}
+.hero::after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.hero-content {
+    z-index: 2;
+    width: 80%;
+}
+.hero-content h2{
+    font-size: 70px;
+    display: flex;
+   
+    margin: auto;
+    flex-wrap: wrap;
+    /* animation: colorchange 1s ease-in 2; */
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 0.5px white;
+}
+.hero-content h2:hover {
+    color: rgb(18, 184, 18);
+}
+.main-features {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    text-align: center;
+}
+.main-features p{
+    font-size: 20px;
+}
+.feat {
+    display: flex;
+    align-items: center;
+}
+.feat span {
+    margin-right: 5px;
+}
+.feat p {
+    margin-right: 25px;
+}
+
+.stats {
+    width: 80%;
+    /* color: rgb(31, 29, 29); */
+    height: fit-content;
+    padding: 2rem;
+    position: absolute;
+    background: rgba(246, 250, 43, 0.8);
+    bottom: -60px;
+    border-radius: 10px;
+    z-index: 3; 
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.stats .est h2 {
+    font-size: 30px;
+    color: transparent;
+    -webkit-text-stroke: 0.5px black;
+}
+.stats .est span {
+    color: white;
+    font-size: 20px;
+}
+
+/* ABOUT US */
+.heading{
+    margin-top: 200px;
+   
+}
+.sub-heading{
+    text-align: center;
+    font-size: 45px;
+    -webkit-text-stroke: 0.2px green;
+    color: white;
+}
+.about-content {
+    display: grid;
+    padding: 3rem;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    grid-template-rows: auto;
+}
+.about-pic {
+    border-radius: 120px 0 15px 4px;
+    overflow: hidden;
+    width: 100%;
+    height: 450px;
+}
+.about-pic img {
+    width: 100%;
+    height: 100%;
+}
+.about-para {
+    margin: 2rem 0;
+}
+.about .contact-link {
+    justify-content: center;
+    display: flex;
+}
+.about .contact-link a{
+    text-align: center;
+}
+
+/* FEATURES */
+.feature-content {
+    background: url(images/body_therapy.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 480px;
+    margin-top: 2rem;
+    position: relative;
+    padding: 5rem;
+}
+.feature-content::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1;
+    content: '';
+    background: black;
+    opacity: 0.5;
+    width: 100%;
+}
+.feature-text {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.features-boxes {
+    width: 100%;
+    margin-top: 3.5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+    z-index: 5;
+}
+.feature
+.feature-content hr {
+    width: 100px;
+    background-color: yellow;
+    border: none;
+    height: 5px;
+    margin-top: 1rem;
+    display: flex;
+}
+.feat-box {
+    padding: 2rem;
+    width: 250px;
+    min-height: 260px;
+    border: 1px solid white;
+}
+.feat-box:hover {
+    background: rgba(165, 164, 164, 0.5);
+}
+.feat-box * {
+    margin-top: 0.7rem;
+}
+.feat-box i{
+    color: yellow;
+}
+.feat-box p {
+    color: rgb(211, 208, 208);
+}
+.swiper {
+    width: 80%;
+    height: 300px;
+}
+
+.swiper-slide {
+    /* border: 4px solid green; */
+    display: flex !important;
+    /* position: absolute; */
+    flex-direction: column;
+    /* width: 20% !important; */
+    overflow: hidden;
+
+    justify-content: center;
+    align-items: center;
+}
+.cli-quote {
+    margin: auto;
+    width: 70%;
+    text-align: center;
+   
+}
+.customer-name {
+   margin-top: 30px;
+   justify-content: center;
+   gap: 1rem;
+    align-items: center;
+    display: flex;
+}
+.customer-name img {
+    width: 70px;
+    height: 70px;
+}
+@keyframes colorchange {
+    0% {
+        color: white;
+    }
+    100% {
+        color: green;
+    }
+}
+
+@media screen and (max-width: 950px){
+    header {
+        padding: 0 15px;
+    }
+    .hamburger {
+        display: block;
+    }
+    .menu-links ul {
+        display: none;
+    }
+    .menu {
+        gap: 20px;
+    }
+    span#contact-text {
+        display: none;
+    }
+    .main-features {
+        flex-direction: column;
+    }
+    .hero-content h2 {
+        font-size: 30px;
+    }
+    .stats {
+        flex-direction: column;
+        gap: 30px;
+        bottom:-150px;
+    }
+    .stats span {
+        margin-top: 20px;
+    }
+    .about-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .about span#contact-text {
+        display: block;
+    }
+    .feature-content {
+        height: fit-content;
+    }
+    .features-boxes {
+        flex-direction: column;
+        /* height: fit-content; */
+    }
+    .swiper {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+@keyframes animate {
+    0% {
+        background-image: url(images/face_massage.avif);
+    }
+    50% {
+        background-image: url(images/face_mass.webp);
+    }
+    100% {
+        background-image: url(images/yoga.webp);
+    }
+}
