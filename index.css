@@ -142,21 +142,23 @@ header .header {
     height: fit-content;
     padding: 2rem;
     position: absolute;
-    background: rgba(246, 250, 43, 0.8);
+    background: black;
     bottom: -60px;
     border-radius: 10px;
     z-index: 3; 
     display: flex;
+    box-shadow: -10px 10px 15px 0px rgba(0,0,0,0.75);
     justify-content: space-between;
-    text-align: center;
+    text-align: center;  
 }
 .stats .est h2 {
     font-size: 30px;
-    color: transparent;
-    -webkit-text-stroke: 0.5px black;
+    color: white;
+    /* -webkit-text-stroke: 0.5px white; */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .stats .est span {
-    color: white;
+    color: green;
     font-size: 20px;
 }
 
@@ -165,11 +167,15 @@ header .header {
     margin-top: 200px;
    
 }
+.about  {
+    margin-top: 400px;
+}
 .sub-heading{
     text-align: center;
     font-size: 45px;
     -webkit-text-stroke: 0.2px green;
-    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: green;
 }
 .about-content {
     display: grid;
@@ -236,7 +242,7 @@ header .header {
     gap: 2rem;
     z-index: 5;
 }
-.feature
+
 .feature-content hr {
     width: 100px;
     background-color: yellow;
@@ -296,15 +302,61 @@ header .header {
     width: 70px;
     height: 70px;
 }
-@keyframes colorchange {
-    0% {
-        color: white;
-    }
-    100% {
-        color: green;
-    }
+
+/* PRODUCTS SECTION */
+.products .products-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: center;
+    gap: 1rem;
 }
 
+.products .product {
+    /* background-color: black;     */
+    /* max-width: 400px; */
+    display: flex;
+    position: relative;
+    justify-content: center;
+    box-shadow: -10px 10px 15px 0px rgba(0,0,0,0.75);
+    align-items: center;
+    /* max */
+    border-radius: 5px;
+    overflow: hidden;
+    /* border: 2px solid rgb(37, 37, 37); */
+}
+.products .product:hover .absolute-prod-desc{
+    bottom: 0;
+}
+.product .absolute-prod-desc {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    background-color: black;
+    color: white;
+    bottom: -30%;
+    transition: bottom 0.5s;
+    padding: 1rem;
+}
+
+.product img {
+    width: 400px;
+    background-color: white;
+    /* border-radius: 20px; */
+    box-shadow: -10px 10px 15px 0px rgba(0,0,0,0.75);
+    text-align: center;
+    height: 500px;
+}
+.product .product-name {
+    font-weight: 900;
+    color: yellow;
+}
+.active_ing span{
+    font-weight: 700;
+}
+
+
+/* RESPONSIVENESS */
 @media screen and (max-width: 950px){
     header {
         padding: 0 15px;
@@ -332,6 +384,7 @@ header .header {
         gap: 30px;
         bottom:-150px;
     }
+    
     .stats span {
         margin-top: 20px;
     }
@@ -364,5 +417,15 @@ header .header {
     }
     100% {
         background-image: url(images/yoga.webp);
+    }
+}
+
+/* KEYFRAMES */
+@keyframes colorchange {
+    0% {
+        color: white;
+    }
+    100% {
+        color: green;
     }
 }
