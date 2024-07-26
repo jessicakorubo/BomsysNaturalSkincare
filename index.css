@@ -18,7 +18,7 @@ header .header {
 .hamburger {
     display: none;
 }
-.header .logo {
+.logo {
     width: 170px;
     height: 100px;
 }
@@ -53,7 +53,8 @@ header .header {
 
 .contact-link {
     text-decoration: none;
-    background: yellow;
+    
+    background: green;
     padding: 15px;
     cursor: pointer;
     border-radius: 15px;
@@ -61,16 +62,19 @@ header .header {
 }
 
 .contact-link:hover {
-    background-color: aliceblue;
+    background-color: white;
+    color: green;
     transition: background-color 0.5s;
 }
-
+.contact-link:hover a {
+    color: green;
+}
 .contact-link a {
     text-decoration: none;
     display: flex;
+    color: white;
     /* text-align: center; */
     gap: 10px;
-    color: black;
     align-items: center;
 }
 
@@ -211,7 +215,7 @@ header .header {
     background: url(images/body_therapy.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 480px;
+    min-height: 480px;
     margin-top: 2rem;
     position: relative;
     padding: 5rem;
@@ -264,7 +268,11 @@ header .header {
     margin-top: 0.7rem;
 }
 .feat-box i{
-    color: yellow;
+    color: white;
+}
+.feat-box h4 {
+    color: yellowgreen;
+    font-weight: 900;
 }
 .feat-box p {
     color: rgb(211, 208, 208);
@@ -340,22 +348,92 @@ header .header {
 }
 
 .product img {
-    width: 400px;
+    width: 300px;
     background-color: white;
     /* border-radius: 20px; */
     box-shadow: -10px 10px 15px 0px rgba(0,0,0,0.75);
     text-align: center;
-    height: 500px;
+    height: 400px;
 }
 .product .product-name {
     font-weight: 900;
-    color: yellow;
+    color: yellowgreen;
 }
 .active_ing span{
     font-weight: 700;
 }
 
+/* CONTACT */
+.contact {
+    /* background: black;
+    color: white; */
+}
+.contact-content {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-details {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+.contact-pic {
+    width: 100%;
+}
+.contact-pic img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+.det-info {
+    width: 300px;
+    padding: 2rem 0;
+    box-shadow:  2px 5px 3px black;
+    border: 2px solid green;
+    border-radius: 20px;
+    text-align: center;
+}
+.det-info:hover {
+    /* background-color: gray; */
+    opacity: 0.9;
+}
+.det-info p {
+    margin-top: 1rem;
+}
+.det-info a{
+    color: inherit;
+    text-decoration: none;
+}
 
+/* FOOTER */
+.footer{
+    background-color: green;
+    color: white;
+}
+.footer-content {
+    display: flex;
+    padding: 2rem;
+    justify-content: space-around;
+}
+.quicklinks li{
+    list-style: none;
+}
+.quicklinks a {
+    text-decoration: none;
+    color: inherit;
+}
+.quicklinks a:hover {
+    color: gray;
+}
+.footer-bottom{
+    text-align: center;
+    border-top: 2px solid gray;
+}
 /* RESPONSIVENESS */
 @media screen and (max-width: 950px){
     header {
@@ -369,9 +447,11 @@ header .header {
     }
     .menu {
         gap: 20px;
+        flex-direction: row-reverse;
+        align-items: center;
     }
     span#contact-text {
-        display: none;
+        /* display: none; */
     }
     .main-features {
         flex-direction: column;
@@ -395,18 +475,18 @@ header .header {
     .about span#contact-text {
         display: block;
     }
-    .feature-content {
-        height: fit-content;
-    }
-    .features-boxes {
-        flex-direction: column;
-        /* height: fit-content; */
-    }
     .swiper {
         width: 100%;
         height: 500px;
     }
+    .features-boxes {
+        flex-direction: column;
+    }
+    .contact-content {
+        flex-direction: column-reverse;
+    }
 }
+
 
 @keyframes animate {
     0% {
