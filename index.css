@@ -204,6 +204,7 @@ header .header {
     height: 450px;
 }
 .about-pic img {
+    object-fit: cover;
     width: 100%;
     height: 100%;
 }
@@ -335,10 +336,10 @@ header .header {
     display: flex;
     position: relative;
     justify-content: center;
-    box-shadow: -10px 10px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: -5px 10px 15px 0px rgba(0,0,0,0.75);
     align-items: center;
     /* max */
-    border-radius: 5px;
+    /* border-radius: 5px; */
     overflow: hidden;
     /* border: 2px solid rgb(37, 37, 37); */
 }
@@ -348,25 +349,29 @@ header .header {
 .product .absolute-prod-desc {
     position: absolute;
     width: 100%;
-    height: 30%;
+    height: fit-content;
     background-color: black;
     color: white;
-    bottom: -30%;
+    bottom: -25%;
     transition: bottom 0.5s;
     padding: 1rem;
 }
 
 .product img {
-    width: 300px;
+    width: 250px;
     background-color: white;
     /* border-radius: 20px; */
     box-shadow: -10px 10px 15px 0px rgba(0,0,0,0.75);
     text-align: center;
-    height: 400px;
+    height: 350px;
 }
 .product .product-name {
     font-weight: 900;
-    color: yellowgreen;
+    color: white;
+    text-align: center;
+}
+.active_ing {
+    text-align: center;
 }
 .active_ing span{
     font-weight: 700;
@@ -480,7 +485,6 @@ header .header {
         display: block;
     }
     .menu-links ul {
-        
         background-color: white;
         padding: 2rem 0;
         z-index: 7;
@@ -489,7 +493,6 @@ header .header {
         justify-content: center;
         text-align: center;
         margin:auto;
-       
         flex-direction: column;
     }
     .contact-link.mobile a{
@@ -502,14 +505,11 @@ header .header {
         flex-direction: column;
     }
     .hero-content h2 {
-        font-size: 30px;
+        font-size: 40px;
     }
     .stats {
-        flex-direction: column;
-        gap: 30px;
-        bottom:-150px;
+        display: none;
     }
-    
     .stats span {
         margin-top: 20px;
     }
@@ -528,10 +528,16 @@ header .header {
     .features-boxes {
         flex-direction: column;
     }
+    .product img{
+        width: 200px;
+        height: 300px;
+    }
+    .product .absolute-prod-desc {
+        bottom: -38%;
+    }
     .contact-content {
         flex-direction: column-reverse;
     }
-
     .footer-content .logo {
         display: flex;
         justify-content: center;
@@ -555,13 +561,15 @@ header .header {
 
 @keyframes animate {
     0% {
-        background-image: url(images/face_massage.avif);
+        background-image: url(images/products/bomsy_natural_combo.jpg);
+        background-position: center center;
     }
     50% {
-        background-image: url(images/face_mass.webp);
+        background-image: url(images/face_massage.avif);
     }
     100% {
         background-image: url(images/yoga.webp);
+        background-position: left;
     }
 }
 
