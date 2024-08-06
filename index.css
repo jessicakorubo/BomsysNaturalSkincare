@@ -61,29 +61,26 @@ header .header {
     color: green;
 }
 
-.contact-link a{
+.consult, .contact-link a{
     text-decoration: none;
-    
+    color: white;
     background: green;
     padding: 15px;
+    width: fit-content;
     cursor: pointer;
     border-radius: 15px;
-    
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
-.contact-link:hover a {
+.contact-link:hover a, .consult:hover {
     transition: background-color 0.5s;
     color: green;
     background-color: white;
 }
-.contact-link a {
-    text-decoration: none;
-    display: flex;
-    color: white;
-    /* text-align: center; */
-    gap: 10px;
-    align-items: center;
-}
+
 
 .hero {
     background-repeat: no-repeat;
@@ -174,6 +171,60 @@ header .header {
     font-size: 20px;
 }
 
+/* OFF ADD */
+.off-add {
+   
+   padding: 2rem;
+   width: 100%;
+   height: 600px;
+}
+.add-pic {
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(Images/products/nourishing_face_cream.jpg);
+    /* background-image: url(images/products/nourishing_face_cream.jpg); */
+    border: 10px double green;
+    height: 100%;
+    position: relative;
+    /* color: green; */
+}
+/* .add-pic::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    background: linear-gradient(rgba(0,0,0,0.2));
+    left: 0;
+} */
+
+.add-pic-con {
+    margin-top: 200px;
+    padding-left: 20px;
+}
+.add-pic-con h2 {
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+.links-view {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.links-view a {
+    background-color: green;
+    color: white;
+    text-align: center;
+    border: 2px solid green;
+    text-decoration: none;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 1rem;
+}
+.links-view a:hover{
+    background-color: transparent;
+    border: 2px solid green;
+    color: green;
+    
+}
+
 /* ABOUT US */
 .heading{
     margin-top: 200px;
@@ -196,6 +247,11 @@ header .header {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     grid-template-rows: auto;
+}
+.about-letter {
+    font-size: 30px;
+    font-weight: bold;
+    color: green;
 }
 .about-pic {
     border-radius: 120px 0 15px 4px;
@@ -323,7 +379,7 @@ header .header {
 
 /* PRODUCTS SECTION */
 .products .products-container{
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
     margin-top: 40px;
     justify-content: center;
@@ -375,6 +431,36 @@ header .header {
 }
 .active_ing span{
     font-weight: 700;
+}
+
+/* HEALTHY EATING */
+.healthy-eating {
+    padding: 5rem;
+}
+.eating-con {
+    display: flex;
+    gap: 2rem;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+}
+.eating-text p{
+    margin-top: 20px;
+}
+.eating-text .huge-eating {
+    font-size: 40px;
+    color: green;
+    font-family: cursive;
+}
+.eating-pic {
+
+    width: 50%;
+}
+.eating-consult {
+    margin-top: 2rem;
+}
+.eating-consult a {
+    text-align: center;
+
 }
 
 /* CONTACT */
@@ -511,15 +597,18 @@ header .header {
         display: none;
     }
     .stats span {
-        margin-top: 20px;
+        margin-top: 25px;
     }
     .about-content {
         padding: 1rem;
         display: flex;
         flex-direction: column;
     }
-    .about span#contact-text {
+    .about span#contact-text, .eating-consult span#contact-text {
         display: block;
+    }
+    .add-pic-con h2 {
+        font-size: 20px;
     }
     .swiper {
         width: 100%;
@@ -534,6 +623,31 @@ header .header {
     }
     .product .absolute-prod-desc {
         bottom: -38%;
+    }
+    /* ADD PIC */
+    .add-pic {
+        background-position: center;
+        color: white;
+    }
+    .healthy-eating {
+        padding: 2rem;
+        width: 100%;
+        justify-content: center;
+    }
+    .eating-con {
+        justify-content: center;
+    }
+    .eating-pic {
+        width: 300px;
+        text-align: center;
+    }
+    .eating-pic img {
+        width: 100%;
+        height: 100%;
+    }
+    .eating-con  {
+        flex-direction: column;
+        align-items: center;
     }
     .contact-content {
         flex-direction: column-reverse;
