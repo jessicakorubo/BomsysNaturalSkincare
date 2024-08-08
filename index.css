@@ -263,8 +263,9 @@ header .header {
     background-color: gray;
 }
 .profile-con img {
-    /* width: 100%; */
+    width: 100%;
     object-fit: cover;
+    border-radius: inherit;
     height: 100%;    
 }
 
@@ -324,7 +325,7 @@ header .header {
 
 /* FEATURES */
 .feature-content {
-    background: url(images/body_therapy.webp);
+    background: url(images/gym_photos.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 480px;
@@ -459,7 +460,9 @@ header .header {
 }
 .product .absolute-prod-desc {
     position: absolute;
-    width: 100%;
+    width: 80%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     height: fit-content;
     background-color: black;
     color: white;
@@ -483,6 +486,7 @@ header .header {
 }
 .active_ing {
     text-align: center;
+    color: yellowgreen;
 }
 .active_ing span{
     font-weight: 700;
@@ -699,6 +703,10 @@ header .header {
         bottom: -38%;
     }
     /* ADD PIC */
+    .profile-con {
+        width: 200px;
+    }
+    
     .add-pic {
         background-position: center;
         color: white;
