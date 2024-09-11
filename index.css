@@ -434,21 +434,74 @@ header .header {
 }
 
 /* PRODUCTS SECTION */
-.products .products-container{
-    /* display: flex; */
+.products {
+    /* position: relative; */
+}
+ .product-list{
+    display: flex;
     flex-wrap: wrap;
     margin-top: 40px;
+    /* position: relative; */
     justify-content: center;
     gap: 1rem;
 }
-
+.popup {
+    position: fixed;
+    overflow-y: scroll;
+    top: 20%;
+    background-color: white;
+    /* padding: 2rem; */
+    box-shadow: inset 12px 3px 2px gray, 1px 3px 2px yellowgreen;
+    left: 20%;
+    margin: auto;
+    width: 60%;
+    height: 400px;  
+    color: black;
+    z-index: 20;
+    border-radius: 5px;
+    display: none;
+}
+.popup.open{
+    display: block;
+}
+#product-details {
+    display: flex;
+    width: 100%;
+    gap: 10%;
+    padding :2rem;
+    height: 100%;
+    /* background-color: blueviolet; */
+}
+#product-details h3#prod-head {
+    font-size: 30px;
+    color: black;
+}
+#product-details img{
+    object-fit: cover;
+    width: 200px;
+    margin-top: 1rem;
+    height: 300px;
+    box-shadow: 2px 3px 4px yellowgreen;
+}
+#close-popup {
+    background-color: green;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 5px;
+    color:white;
+    padding: 0.5rem 1.5rem
+}
+.product{
+    background: rgba(177, 175, 175, 0.5)
+}
 .products .product {
-
     /* max-width: 400px; */
     display: flex;
     position: relative;
     justify-content: center;
-    box-shadow: -5px 10px 15px 0px rgba(0,0,0,0.75);
+    /* box-shadow: 5px 1px 5px 0px rgba(0,0,0,0.75); */
+    /* border: 5px solid green; */
+    border-radius: 10px;
     align-items: center;
     /* max */
     /* border-radius: 5px; */
@@ -456,28 +509,33 @@ header .header {
     /* border: 2px solid rgb(37, 37, 37); */
 }
 .products .product:hover .absolute-prod-desc{
-    bottom: 0;
+    /* bottom */
 }
 .product .absolute-prod-desc {
     position: absolute;
+    /* display: none; */
+    text-align:center;
     width: 80%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     height: fit-content;
     background-color: black;
     color: white;
-    bottom: -25%;
+    bottom: 0;
     transition: bottom 0.5s;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .product img {
-    width: 250px;
-    background-color: white;
+    width: 300px;
     /* border-radius: 20px; */
     box-shadow: -10px 10px 15px 0px rgba(0,0,0,0.75);
     text-align: center;
-    height: 350px;
+    height: fit-content;
+}
+#ingredients, #key-benefits {
+    margin-top: 2rem;
+    color: green;
 }
 .product .product-name {
     font-weight: 900;
@@ -696,11 +754,22 @@ header .header {
         flex-direction: column;
     }
     .product img{
-        width: 200px;
-        height: 300px;
+        width: 300px;
+        height: 400px;
     }
     .product .absolute-prod-desc {
-        bottom: -38%;
+        /* bottom: -38%; */
+    }
+    .popup {
+        width: 80%;
+        left: 10%;
+        /* flex-direction: column; */
+    }
+    #product-details {
+        flex-direction: column;
+    }
+    #product-details img {
+        width: 100%;
     }
     /* ADD PIC */
     .profile-con {

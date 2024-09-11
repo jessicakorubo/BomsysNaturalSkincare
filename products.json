@@ -1,0 +1,60 @@
+[
+    {
+        "id": 1,
+        "name": "Activated Charcoal Mask",
+        "image" : "activated_charcoal_face_mask.jpg",
+        "ingredients": "Activated Charcoal, blended with either Rhassoul Clay, Betonite Indian Healing Clay, Green clay, French Clay",
+        "key_benefits": "Cleans out and tightens pores, Draws out impurity, Detoxifies and helps improve skins texture and appearance. Activated charcoal may treat moderately severe to life threatening intoxication. Activated charcoal can bind to some toxic substances and prevent them from absorbing into the body."
+    },
+    {
+        "id": 2,
+        "name": "Alcohol Free Toning Spritz",
+        "image" : "alcohol_free_toning_spritz.jpg",
+        "ingredients": "Coming soon"
+    },
+    {
+        "id": 4,
+        "name": "Night Oil Facial Serum",
+        "image" : "Night_oil_mok.jpg",
+        "ingredients": "Seabuckthorn, Bakuchoil oil, Rose hip seed oil, Carrot seed Oil",
+        "key_benefits": "Antibacterial, Anti-fungal, improves appearance and evens skins’s complexion. With added natural oils for moisturising, it won’t dry out skin. Suitable for treatment of eczema, dermatitis, acne and problematic skin. "
+    },
+    {
+        "id": 5,
+        "name": "Facial Oil Cleanser",
+        "image" : "facial_oil_cleanser_mok.png",
+        "ingredients": "coming soon",
+        "key_benefits": "coming soon"
+
+    },
+    {
+        "id": 6,
+        "name": "Hyaluronic Acid Serum",
+        "image" : "hyaluronic_acid.jpg",
+        "ingredients": "Sodium Hyaluronate, Niacinamide Vit. B3 & N-Acetyl Glucosamine",
+        "key_benefits": "Plumping, Hydrating, Brightens dark spots, Corrects Hyperpigmentation, Anti-wrinkle, Anti ageing, Repairs Sun damage"
+    },
+    {
+        "id": 7,
+        "name": "Nourishing Face Cream",
+        "image" : "nourishing_face_cream_mok.jpg",
+        "ingredients": "Shea butter, Licorice root,Aloe vera, Lactic acid",
+        "key_benefits": "Moisturizes, Treats, Repairs, Brightens, Smoothens  and Nourishes skin. Anti oxidant rich"
+    },
+    {
+        "id": 8,
+        "name": "Black Soap Face Wash",
+        "image" : "black_soap_face_wash_mok.jpg",
+        "ingredients": "Allantoin, Lactic acid",
+        "key_benefits": "Antibacterial, Anti-fungal, improves appearance and evens skins’s complexion. With added natural oils for moisturising, it won’t dry out skin. Suitable for treatment of eczema, dermatitis, acne and problematic skin."
+    },
+    {
+        "id": 9,
+        "name": "Resurfacing Cleansing Lotion",
+        "image" : "resurfacing_cleansing_lotion_mok.jpg",
+        "ingredients": "Aloe Vera, Allantoin, Argan oil and PHA",
+        "key_benefits": "Removes dirt, make up and excess oil as it gently cleanses skin in preparation for next step. Soothing and won’t dry out skin. Suitable for all skin types especially dry and mature skin."
+    }
+   
+    
+]
