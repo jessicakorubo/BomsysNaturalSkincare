@@ -433,6 +433,38 @@ header .header {
     height: 70px;
 }
 
+
+/* CERTIFICATIONS SECTION */
+
+
+.certificate-wrapper {
+    display: flex;
+    background: green;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    /* overflow: hidden; */
+}
+#swiper1 {
+    margin-top: 100px;
+    height: fit-content;
+}
+.certifications #swiper-wrapper.swiper-wrapper {
+    width: 400px;
+    background-color: red !important;
+    height: 800px !important;
+}
+#certificate img {
+    width: 400px;
+    height: 600px;
+    object-fit: contain;
+}
+.certifications #swiper-wrapper{
+    height: 30rem !important;
+    background: red !important;
+
+}
+
 /* PRODUCTS SECTION */
 .products {
     /* position: relative; */
@@ -581,7 +613,7 @@ header .header {
 }
 .eating-consult a {
     text-align: center;
-
+    /*commit this change */
 }
 
 /* CONTACT */
@@ -594,6 +626,7 @@ header .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* nothing yt */
 }
 .contact-details {
     align-items: center;
@@ -620,7 +653,6 @@ header .header {
     text-align: center;
 }
 .det-info:hover {
-    /* background-color: gray; */
     opacity: 0.9;
 }
 .det-info p {
@@ -637,8 +669,8 @@ header .header {
 /* FOOTER */
 .footer{
     margin-top: 150px;
-    background-color: green;
-    color: white;
+    background-color: white;
+    color: green;
 }
 .footer-content {
     display: flex;

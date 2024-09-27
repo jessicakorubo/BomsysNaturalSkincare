@@ -22,7 +22,7 @@
     {
         "id": 5,
         "name": "Facial Oil Cleanser",
-        "image" : "facial_oil_cleanser_mok.png",
+        "image" : "facial_oil_cleanser_mok.jpg",
         "ingredients": "coming soon",
         "key_benefits": "coming soon"
 
@@ -58,3 +58,4 @@
    
     
 ]
+// Edited by me

@@ -57,11 +57,11 @@
                     </div>
                     <div class="feat" data-aos="fade-up" data-aos-delay="200">
                         <span><i class="fa-solid fa-snowflake" style="color: #37f434;"></i></span>
-                        <p>Spiritual health</p>
+                        <p>Holistic Health and Wellbeing (Physical, Mental, Financial, Emotional, Spiritual)</p>
                     </div>
                     <div class="feat" data-aos="fade-up" data-aos-delay="300">
                         <span><i class="fa-solid fa-shower" style="color: #37f434;"></i></span>
-                        <p>Body and facial care</p>
+                        <p>Holistic Skincare Consultation and Coaching</p>
                     </div>
                     <div class="feat" data-aos="fade-up" data-aos-delay="400">
                         <span><i class="fa-solid fa-seedling" style="color: #37f434;"></i></span>
@@ -117,8 +117,7 @@
                         <span class="about-letter">W</span>ith her background in Business Administration/Management,
                         Boma is also the
                         Head of Administration and Facilitator for the Grace Life Church Discipleship
-                        Training Program, Lagos Nigeria.She is married to Omoefe and the union is
-                        blessed with children.
+                        Training Program, Lagos Nigeria.
 
                     </p>
                     <div class="contact-link">
@@ -138,7 +137,7 @@
 
                 <div class="eating-text">
                     <h2>Inspiring <br><span class="huge-eating" data-aos="zoom-out-down">healthy eating</span> lifestyles.</h2>
-                    <p>We believe that eating right is not just a choice but a lifestyle—after all, we are what we eat.
+                    <p>I believe that eating right is not just a choice but a lifestyle, after all, we are what we eat.
                         Our philosophy centers around the idea that proper nutrition is the foundation for a healthy
                         body and glowing skin.
                         <br> <br>
@@ -216,10 +215,43 @@
             </div>
         </div>
 
+        <div class="certifications heading">
+            <h2 class="sub-heading">Certifications</h2>
+
+            <div class="swiper" id="swiper1">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" id="certificate">
+                        <img src="images/certifications/facial_treatments_certification.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide" id="certificate">
+                        <img src="images/certifications/health_wellness_coach.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide" id="certificate">
+                        <img src="images/certifications/holistic_skincare_products.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide" id="certificate">
+                        <img src="images/certifications/human_health_allison.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide" id="certificate">
+                        <img src="images/certifications/professional_skincare_coach.jpg" alt="">
+                    </div>
+    
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+            </div>
+           
+
+        </div>
+
         <div class="testimonials heading">
             <h2 class="sub-heading">Testimonials</h2>
             <!-- Slider main container -->
-            <div class="swiper">
+            <div class="swiper" id="swiper2">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
@@ -350,7 +382,7 @@
                     </div>
                 </div>
                 <div class="contact-pic">
-                    <img src="images/bomsy_about_face_pic.jpg" alt="">
+                    <img src="images/skin_reju.jpeg" alt="">
                 </div>
 
             </div>
@@ -391,7 +423,9 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
-        const swiper = new Swiper('.swiper', {
+      
+
+      new Swiper('#swiper2', {
             // Optional parameters
             // direction: 'vertical',
             // loop: true,
@@ -411,6 +445,23 @@
             // scrollbar: {
             //     el: '.swiper-scrollbar',
             // },
+        });
+         new Swiper('#swiper1', {
+  
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+         
         });
     </script>
     <script src="index.js"></script>
