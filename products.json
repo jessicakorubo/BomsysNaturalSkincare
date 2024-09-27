@@ -46,7 +46,7 @@
         "name": "Black Soap Face Wash",
         "image" : "black_soap_face_wash_mok.jpg",
         "ingredients": "Allantoin, Lactic acid",
-        "key_benefits": "Antibacterial, Anti-fungal, improves appearance and evens skins’s complexion. With added natural oils for moisturising, it won’t dry out skin. Suitable for treatment of eczema, dermatitis, acne and problematic skin."
+        "key_benefits": "Antibacterial, Anti-fungal, improves appearance and evens skins'\ns complexion. With added natural oils for moisturising, it won’t dry out skin. Suitable for treatment of eczema, dermatitis, acne and problematic skin."
     },
     {
         "id": 9,
@@ -58,4 +58,3 @@
    
     
 ]
-// Edited by me
