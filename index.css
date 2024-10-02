@@ -129,7 +129,7 @@ header .header {
 }
 .main-features {
     margin-top: 50px;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     /* flex-direction: column; */
     text-align: center;
