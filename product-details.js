@@ -5,6 +5,14 @@ function getQueryParam(param) {
 
 // Function to loas product details based on the product ID
 function loadProductDetails() {
+
+   
+        console.log("Dahun dahun laslakerintin osa conphusion");
+        setTimeout(function() {
+            document.getElementById('advertPopup').style.display = 'block';
+        }, 5000);
+    
+
     const productId = getQueryParam('id'); //get the product ID from the URL
 
     fetch('products.json')
