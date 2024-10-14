@@ -7,10 +7,7 @@ function getQueryParam(param) {
 function loadProductDetails() {
 
    
-        console.log("Dahun dahun laslakerintin osa conphusion");
-        setTimeout(function() {
-            document.getElementById('advertPopup').style.display = 'block';
-        }, 5000);
+      
     
 
     const productId = getQueryParam('id'); //get the product ID from the URL

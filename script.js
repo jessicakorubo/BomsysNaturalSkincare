@@ -2,6 +2,10 @@ const popup = document.querySelector('.popup');
 const closepopup = document.getElementById('close-popup');
 
 window.onload = function() {
+
+    setTimeout(function() {
+        document.getElementById('advertPopup').style.display = 'block';
+    }, 5000);
     const productList = document.getElementById('product-list');
     
     // productList.appendChild('How are you?');
